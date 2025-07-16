@@ -11,7 +11,7 @@ Este proyecto es una demostración sencilla de una tienda web estática que perm
 - Redirección automática al checkout de Clip al confirmar pago.
 - Estilo moderno y limpio, ideal como demo o base para proyectos más complejos.
 
-## 🧾 Estructura del Proyecto
+## Estructura del Proyecto
 
 - `index.html`: Página principal que incluye todo el HTML, CSS y JS.
 - No requiere backend ni frameworks adicionales.
