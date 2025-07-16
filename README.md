@@ -82,7 +82,7 @@ Incluye tres artículos:
 
 Inspirado por las integraciones oficiales de Clip.
 
-## 🧠Recursos adicionales
+## Recursos adicionales
 
 - [Documentación oficial de Clip](https://developer.clip.mx)
 - [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/redirect-v2)
