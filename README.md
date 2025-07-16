@@ -2,7 +2,7 @@
 
 Este proyecto es una demostración sencilla de una tienda web estática que permite a los usuarios seleccionar productos, calcular el total de su carrito y redirigirlos automáticamente a una **pasarela de pago de Clip (Redirect V2)**.
 
-## 🚀 Funcionalidades principales
+##  Funcionalidades principales
 
 - Diseño web responsive tipo tienda.
 - Lista de productos con imágenes, descripciones y cantidades ajustables.
@@ -52,13 +52,13 @@ Incluye tres artículos:
 - API Key pública de Clip codificada en base64 en el header `Authorization`.
 - Redirección a la URL devuelta por `payment_request_url`.
 
-## ⚠️ Consideraciones de seguridad
+## ⚠Consideraciones de seguridad
 
 - **No uses esta API Key en producción**: en este demo está expuesta directamente en el frontend.
 - Para entornos reales, la solicitud al endpoint de Clip debe hacerse desde un backend seguro.
 - Este proyecto es solo para demostración/desarrollo.
 
-## 📦 Instrucciones de instalación
+## Instrucciones de instalación
 
 1. Clona este repositorio o descarga el archivo `index.html`.
 2. Abre el archivo en un navegador:
@@ -68,7 +68,7 @@ Incluye tres artículos:
    ```
 3. Ajusta los valores de `Authorization` y `redireccion_url` según tu cuenta Clip.
 
-## 🌐 Publicar con GitHub Pages (opcional)
+## Publicar con GitHub Pages (opcional)
 
 1. Sube el archivo a un repositorio público.
 2. Ve a **Settings > Pages**.
@@ -78,12 +78,12 @@ Incluye tres artículos:
    https://TU_USUARIO.github.io/TU_REPOSITORIO/
    ```
 
-## 👨‍💻 Autor
+##  Autor
 
 Desarrollado por [Tu Nombre]  
 Inspirado por las integraciones oficiales de Clip.
 
-## 🧠 Recursos adicionales
+## 🧠Recursos adicionales
 
 - [Documentación oficial de Clip](https://developer.clip.mx)
 - [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/redirect-v2)
