@@ -17,7 +17,7 @@ Este proyecto es una demostración sencilla de una tienda web estática que perm
 - No requiere backend ni frameworks adicionales.
 - Toda la lógica está contenida en el archivo HTML (estructura + estilos + lógica JS).
 
-## 🛒 Productos de prueba
+## Productos de prueba
 
 Incluye tres artículos:
 
@@ -87,6 +87,6 @@ Inspirado por las integraciones oficiales de Clip.
 - [Documentación oficial de Clip](https://developer.clip.mx)
 - [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/redirect-v2)
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está disponible bajo la licencia MIT para fines educativos y de demostración.
