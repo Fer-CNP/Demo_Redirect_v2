@@ -27,7 +27,7 @@ Incluye tres artículos:
 | Vestido Linas    | $499.00 | ![Vestido](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/14-1e83126b0ec6a148ff17314443478040-1024-1024.webp) |
 | Falda Leopardo   | $699.00 | ![Falda](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1729615360945-150x150-9cd526d1ed0526944217314441101237-1024-1024.webp) |
 
-## 💳 Integración con Clip
+## Integración con Clip
 
 ### API utilizada:
 `POST https://api.payclip.com/v2/checkout`
