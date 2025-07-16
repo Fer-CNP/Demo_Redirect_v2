@@ -80,7 +80,6 @@ Incluye tres artículos:
 
 ##  Autor
 
-Desarrollado por [Tu Nombre]  
 Inspirado por las integraciones oficiales de Clip.
 
 ## 🧠Recursos adicionales
