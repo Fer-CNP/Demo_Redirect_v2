@@ -61,13 +61,8 @@ Incluye tres artículos:
 
 ## Instrucciones de instalación
 
-1. Clona este repositorio o descarga el archivo `index.html`.
-2. Abre el archivo en un navegador:
-   ```bash
-   open index.html
-   # o simplemente haz doble clic en el archivo
-   ```
-3. Ajusta los valores de `Authorization` y `redireccion_url` según tu cuenta Clip.
+1. Clona este repositorio o descarga el archivo `index.html` + `checkout.php`
+2. Ajusta los valores de `Authorization` y `redireccion_url` según tu cuenta Clip o lógica.
 
 ## Publicar con GitHub Pages (opcional)
 
