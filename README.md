@@ -56,9 +56,9 @@ Incluye tres artículos:
 
 ## ⚠Consideraciones de seguridad
 
-- **No uses esta API Key en producción**: en este demo está expuesta directamente en el frontend.
+- Las credenciales privadas nunca deben exponerse en aplicaciones frontend o código JavaScript público.El endpoint /v2/checkout está diseñado para integraciones server-to-server.
 - Para entornos reales, la solicitud al endpoint de Clip debe hacerse desde un backend seguro.
-- Este proyecto es solo para demostración/desarrollo.
+-  Este proyecto es solo para demostración/desarrollo.
 
 ## Instrucciones de instalación
 
