@@ -15,9 +15,7 @@ Este proyecto es una demostración sencilla de una tienda web estática que perm
 
 - `index.html`: Página principal que incluye todo el HTML, CSS y JS.
 - Las credenciales privadas nunca deben exponerse en aplicaciones frontend o código JavaScript público.
-- Utiliza el archivo checkout.php, para almacenar tus Api Keys en Prod esto por motivos de seguridad y políticas CORS.
-
-  El endpoint /v2/checkout está diseñado para integraciones server-to-server.
+- Utiliza el archivo `checkout.php`, para almacenar tus Api Keys en Prod esto por motivos de seguridad y políticas CORS ya que el endpoint `/v2/checkout` está diseñado para integraciones server-to-server.
 - Toda la lógica está contenida en el archivo HTML (estructura + estilos + lógica JS).
 
 ## Productos de prueba
