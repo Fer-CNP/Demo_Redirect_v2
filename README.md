@@ -14,7 +14,9 @@ Este proyecto es una demostración sencilla de una tienda web estática que perm
 ## Estructura del Proyecto
 
 - `index.html`: Página principal que incluye todo el HTML, CSS y JS.
-- No requiere backend ni frameworks adicionales.
+- Las credenciales privadas nunca deben exponerse en aplicaciones frontend o código JavaScript público.
+
+  El endpoint /v2/checkout está diseñado para integraciones server-to-server.
 - Toda la lógica está contenida en el archivo HTML (estructura + estilos + lógica JS).
 
 ## Productos de prueba
