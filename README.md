@@ -50,7 +50,7 @@ Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de
 - **Integración Server-to-Server:** El endpoint `/v2/checkout` de Clip no permite peticiones directas desde el navegador (CORS). El uso de `checkout.php` es obligatorio para que la integración funcione.
 - **Protección de Credenciales:** Nunca subas tu Token real a repositorios públicos. Utiliza variables de entorno o archivos protegidos en producción.
 
-## 📚 Recursos Adicionales
+## Recursos Adicionales
 
 - [Documentación oficial de Clip](https://developer.clip.mx)
 - [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/introduccion-a-clip-checkout)
