@@ -1,4 +1,4 @@
-[Clip Logo](https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg) # Clip Checkout Redirect V2 - Demo Implementation!
+![Clip Logo](https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg) # Clip Checkout Redirect V2 - Demo Implementation!
 
 
 
