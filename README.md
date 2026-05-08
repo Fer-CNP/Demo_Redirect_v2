@@ -1,10 +1,10 @@
-# 🚀 Clip Checkout Redirect V2 - Demo Implementation
+# Clip Checkout Redirect V2 - Demo Implementation ![Clip Logo](https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg)
 
-![Clip Logo](https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg)
+
 
 Este proyecto es una demostración profesional de una tienda web que utiliza la **API Redirect V2 de Clip**. A diferencia de las integraciones básicas, esta versión utiliza una arquitectura de **Proxy Backend** para garantizar la seguridad de las credenciales y resolver problemas de CORS.
 
-## 📋 Funcionalidades principales
+## Funcionalidades principales
 
 - **Diseño Responsive:** Interfaz moderna tipo tienda optimizada para móviles y escritorio.
 - **Cálculo Dinámico:** Gestión de carrito con actualización de totales en tiempo real.
@@ -12,14 +12,14 @@ Este proyecto es una demostración profesional de una tienda web que utiliza la 
 - **CORS Friendly:** Configuración de cabeceras para permitir peticiones seguras desde el navegador.
 - **Flujo Completo:** Desde la selección del producto hasta la redirección automática a la pasarela de Clip.
 
-## 🛠️ Arquitectura de la Solución
+## Arquitectura de la Solución
 
 Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de desarrollo, el proyecto se divide en dos capas:
 
 1.  **Frontend (`index.html`):** Gestiona la interfaz de usuario y envía la información del pedido a nuestro propio servidor.
 2.  **Backend (`checkout.php`):** Actúa como un proxy seguro que recibe la petición del frontend, añade las credenciales de Clip (Basic Auth) y solicita la URL de pago a la API oficial.
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 | Archivo | Descripción |
 | :--- | :--- |
