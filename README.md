@@ -53,7 +53,7 @@ Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de
 ## 📚 Recursos Adicionales
 
 - [Documentación oficial de Clip](https://developer.clip.mx)
-- [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/redirect-v2)
+- [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/introduccion-a-clip-checkout)
 
 ---
 **Autor:** [Fer-CNP](https://github.com/Fer-CNP)  
