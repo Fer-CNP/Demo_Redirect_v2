@@ -41,7 +41,7 @@ Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de
     git clone [https://github.com/Fer-CNP/Demo_Redirect_v2.git](https://github.com/Fer-CNP/Demo_Redirect_v2.git)
     ```
 2.  **Configurar API Key:**
-    En `checkout.php`, reemplaza `TU_TOKEN_AQUI` con tu token de Clip en formato Base64.
+    En `checkout.php`, reemplaza `TU_TOKEN_AQUI` con tus [Apis Keys](https://developer.clip.mx/reference/token-de-autenticacion) de Clip en formato Base64 en Producción .
 3.  **Definir Redirecciones:**
     Asegúrate de actualizar las URLs de `success`, `error` y `default` en el objeto `payload` dentro de `index.html` para que coincidan con tu dominio.
 
