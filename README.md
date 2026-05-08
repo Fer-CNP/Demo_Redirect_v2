@@ -1,88 +1,60 @@
-# Demo de Pago con Clip - Checkout Redirect V2
+# 🚀 Clip Checkout Redirect V2 - Demo Implementation
 
-Este proyecto es una demostración sencilla de una tienda web estática que permite a los usuarios seleccionar productos, calcular el total de su carrito y redirigirlos automáticamente a una **pasarela de pago de Clip (Redirect V2)**.
+![Clip Logo](https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg)
 
-##  Funcionalidades principales
+Este proyecto es una demostración profesional de una tienda web que utiliza la **API Redirect V2 de Clip**. A diferencia de las integraciones básicas, esta versión utiliza una arquitectura de **Proxy Backend** para garantizar la seguridad de las credenciales y resolver problemas de CORS.
 
-- Diseño web responsive tipo tienda.
-- Lista de productos con imágenes, descripciones y cantidades ajustables.
-- Cálculo automático del total.
-- Generación dinámica de `payment_request_url` usando la API de Clip.
-- Redirección automática al checkout de Clip al confirmar pago.
-- Estilo moderno y limpio, ideal como demo o base para proyectos más complejos.
+## 📋 Funcionalidades principales
 
-## Estructura del Proyecto
+- **Diseño Responsive:** Interfaz moderna tipo tienda optimizada para móviles y escritorio.
+- **Cálculo Dinámico:** Gestión de carrito con actualización de totales en tiempo real.
+- **Seguridad Server-to-Server:** Implementación de un puente PHP para proteger el API Key.
+- **CORS Friendly:** Configuración de cabeceras para permitir peticiones seguras desde el navegador.
+- **Flujo Completo:** Desde la selección del producto hasta la redirección automática a la pasarela de Clip.
 
-- `index.html`: Página principal que incluye todo el HTML, CSS y JS.
-- Las credenciales privadas nunca deben exponerse en aplicaciones frontend o código JavaScript público.
-- Utiliza el archivo `checkout.php`, para almacenar tus Api Keys en Prod esto por motivos de seguridad y políticas CORS ya que el endpoint `/v2/checkout` está diseñado para integraciones server-to-server.
-- Toda la lógica está contenida en el archivo HTML (estructura + estilos + lógica JS).
+## 🛠️ Arquitectura de la Solución
 
-## Productos de prueba
+Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de desarrollo, el proyecto se divide en dos capas:
 
-Incluye tres artículos:
+1.  **Frontend (`index.html`):** Gestiona la interfaz de usuario y envía la información del pedido a nuestro propio servidor.
+2.  **Backend (`checkout.php`):** Actúa como un proxy seguro que recibe la petición del frontend, añade las credenciales de Clip (Basic Auth) y solicita la URL de pago a la API oficial.
 
-| Producto         | Precio  | Imagen                                                  |
-|------------------|---------|----------------------------------------------------------|
-| Jersey Burdeos   | $299.00 | ![Jersey](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1725538674403-ab533c801bd44d574d17314445515197-1024-1024.webp) |
-| Vestido Linas    | $499.00 | ![Vestido](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/14-1e83126b0ec6a148ff17314443478040-1024-1024.webp) |
-| Falda Leopardo   | $699.00 | ![Falda](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1729615360945-150x150-9cd526d1ed0526944217314441101237-1024-1024.webp) |
+## 📦 Estructura del Proyecto
 
-## Integración con Clip
+| Archivo | Descripción |
+| :--- | :--- |
+| `index.html` | Estructura, estilos (CSS) y lógica de cliente (JS). |
+| `checkout.php` | Script PHP que gestiona la comunicación segura con la API de Clip. |
 
-### API utilizada:
-`POST https://api.payclip.com/v2/checkout`
+## 🛍️ Productos de Prueba
 
-### Cuerpo del request:
-```json
-{
-  "amount": 1497,
-  "currency": "MXN",
-  "purchase_description": "Orden #OTCL101",
-  "redireccion_url": {
-    "success": "",
-    "error": "",
-    "default": ""
-  }
-}
-```
+| Producto | Precio | Imagen |
+| :--- | :--- | :--- |
+| **Jersey Burdeos** | $299.00 | [Ver](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1725538674403-ab533c801bd44d574d17314445515197-1024-1024.webp) |
+| **Vestido Linas** | $499.00 | [Ver](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/14-1e83126b0ec6a148ff17314443478040-1024-1024.webp) |
+| **Falda Leopardo** | $699.01 | [Ver](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1729615360945-150x150-9cd526d1ed0526944217314441101237-1024-1024.webp) |
 
-> El `amount` se calcula automáticamente en el frontend, en función de los productos seleccionados.
+## 🚀 Instrucciones de Configuración
 
-### Requisitos:
-- API Key pública de Clip codificada en base64 en el header `Authorization`.
-- Redirección a la URL devuelta por `payment_request_url`.
+1.  **Clonar el proyecto:**
+    ```bash
+    git clone [https://github.com/Fer-CNP/Demo_Redirect_v2.git](https://github.com/Fer-CNP/Demo_Redirect_v2.git)
+    ```
+2.  **Configurar API Key:**
+    En `checkout.php`, reemplaza `TU_TOKEN_AQUI` con tu token de Clip en formato Base64.
+3.  **Definir Redirecciones:**
+    Asegúrate de actualizar las URLs de `success`, `error` y `default` en el objeto `payload` dentro de `index.html` para que coincidan con tu dominio.
 
-## ⚠Consideraciones de seguridad
+## ⚠️ Consideraciones de Seguridad
 
-- Las credenciales privadas nunca deben exponerse en aplicaciones frontend o código JavaScript público.El endpoint /v2/checkout está diseñado para integraciones server-to-server.
-- Para entornos reales, la solicitud al endpoint de Clip debe hacerse desde un backend seguro.
--  Este proyecto es solo para demostración/desarrollo.
+- **Integración Server-to-Server:** El endpoint `/v2/checkout` de Clip no permite peticiones directas desde el navegador (CORS). El uso de `checkout.php` es obligatorio para que la integración funcione.
+- **Protección de Credenciales:** Nunca subas tu Token real a repositorios públicos. Utiliza variables de entorno o archivos protegidos en producción.
 
-## Instrucciones de instalación
-
-1. Clona este repositorio o descarga el archivo `index.html` + `checkout.php`
-2. Ajusta los valores de `Authorization` y `redireccion_url` según tu cuenta Clip o lógica.
-
-## Publicar con GitHub Pages (opcional)
-
-1. Sube el archivo a un repositorio público.
-2. Ve a **Settings > Pages**.
-3. Activa GitHub Pages en la rama `main` y la raíz `/`.
-4. Tu demo estará disponible en:
-   ```
-   https://TU_USUARIO.github.io/TU_REPOSITORIO/
-   ```
-
-##  Autor
-
-Inspirado por las integraciones oficiales de Clip.
-
-## Recursos adicionales
+## 📚 Recursos Adicionales
 
 - [Documentación oficial de Clip](https://developer.clip.mx)
 - [Referencia de Checkout Redirect V2](https://developer.clip.mx/reference/redirect-v2)
 
-## Licencia
-
-Este proyecto está disponible bajo la licencia MIT para fines educativos y de demostración.
+---
+**Autor:** [Fer-CNP](https://github.com/Fer-CNP)  
+**Licencia:** MIT - Fines educativos y de demostración.
