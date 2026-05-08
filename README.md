@@ -26,7 +26,7 @@ Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de
 | `index.html` | Estructura, estilos (CSS) y lógica de cliente (JS). |
 | `checkout.php` | Script PHP que gestiona la comunicación segura con la API de Clip. |
 
-## 🛍️ Productos de Prueba
+## Productos de Prueba
 
 | Producto | Precio | Imagen |
 | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ Para cumplir con las políticas de seguridad de Clip y las mejores prácticas de
 | **Vestido Linas** | $499.00 | [Ver](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/14-1e83126b0ec6a148ff17314443478040-1024-1024.webp) |
 | **Falda Leopardo** | $699.01 | [Ver](https://dcdn-us.mitiendanube.com/stores/005/471/805/products/1729615360945-150x150-9cd526d1ed0526944217314441101237-1024-1024.webp) |
 
-## 🚀 Instrucciones de Configuración
+##  Instrucciones de Configuración
 
 1.  **Clonar el proyecto:**
     ```bash
